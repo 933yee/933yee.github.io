@@ -1,6 +1,6 @@
 ---
 title: CSES Fibonacci Numbers
-date: 2022-08-16 15:52::00 +0800
+date: 2022-08-16 15:52:00 +0800
 categories: [Code, CSES]
 tags: [cses]     # TAG names should always be lowercase
 math: true
