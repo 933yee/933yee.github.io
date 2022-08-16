@@ -1,5 +1,5 @@
 ---
-title: ZeroJudge-a007:判斷質數
+title: ZeroJudge-a007 判斷質數
 date: 2022-08-16 11:04::00 +0800
 categories: [Code, ZeroJudge]
 tags: [zerojudge]     # TAG names should always be lowercase
@@ -7,7 +7,7 @@ math: true
 ---
 
 ---
-## [Question Link](https://zerojudge.tw/ShowProblem?problemid=a007 "a007:判斷質數")
+## [Question Link](https://zerojudge.tw/ShowProblem?problemid=a007 "ZeroJudge-a007")
 
 **題目敘述**
 ===
