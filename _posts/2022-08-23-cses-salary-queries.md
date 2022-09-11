@@ -9,10 +9,15 @@ math: true
 ---
 ## [Problem Link](https://cses.fi/problemset/result/4483741/ "CSES-Salary Queries")
 
+
+**作法**
+===
+1. 離散化(discretization) + 線段樹(segment tree)
+
+2. 離散化(discretization) + BIT(binary indexed tree)
+
 **Code1**
 ===
-
-離散化(discretization) + 線段樹(segment tree)
 
 ```cpp
 #include <bits/stdc++.h>
@@ -81,8 +86,6 @@ int main(){
 **Code2**
 ===
 
-離散化(discretization) + BIT(binary indexed tree)
-
 ```cpp
 #include <bits/stdc++.h>
 #define io ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
@@ -93,14 +96,14 @@ void update(int x, int d){
     x = lower_bound(t.begin(), t.end(), x) - t.begin() + 1;
     while(x <= t.size()){
         BIT[x] += d;
-        x += x&(-x);
+        x += x & (-x);
     }
 }
 int find(int x){
     int ret = 0;
     while(x > 0){
         ret += BIT[x];
-        x -= x&(-x);
+        x -= x & (-x);
     }
     return ret;
 }
