@@ -2,12 +2,12 @@
 title: CSES Fibonacci Numbers
 date: 2022-08-16 15:52:00 +0800
 categories: [Code, CSES]
-tags: [cses]     # TAG names should always be lowercase
+tags: [cses, exponentiation by squaring]     # TAG names should always be lowercase
 math: true
 ---
 
 ---
-## [Question Link](https://cses.fi/problemset/task/1722 "CSES-Fibonacci Numbers")
+## [Problem Link](https://cses.fi/problemset/task/1722 "CSES-Fibonacci Numbers")
 
 **作法**
 ===
@@ -41,5 +41,6 @@ int main(){
     ll n;
     cin >> n;
     cout << binpow(n-1)[0] << '\n';
+    return 0;
 }
 ```

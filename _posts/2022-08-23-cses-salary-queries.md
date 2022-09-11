@@ -2,12 +2,12 @@
 title: CSES Salary Queries
 date: 2022-08-23 21:11:00 +0800
 categories: [Code, CSES]
-tags: [cses]     # TAG names should always be lowercase
+tags: [cses, segment tree]     # TAG names should always be lowercase
 math: true
 ---
 
 ---
-## [Question Link](https://cses.fi/problemset/result/4483741/ "CSES-Salary Queries")
+## [Problem Link](https://cses.fi/problemset/result/4483741/ "CSES-Salary Queries")
 
 **Code1**
 ===
@@ -74,7 +74,7 @@ int main(){
             cout << query(1, 1, t.size(), 1, relabel_upper(op[i][2]))  -  query(1, 1, t.size(), 1, relabel(op[i][1])-1) << '\n';
         }
     }
-
+    return 0;
 }
 ```
 
@@ -140,6 +140,6 @@ int main(){
             cout << query(op[i][1], op[i][2]) << '\n';
         }
     }
-
+    return 0;
 }
 ```
