@@ -14,7 +14,6 @@ math: true
 
 DP
 
-<br>
 
 **Code**
 ===
