@@ -34,7 +34,7 @@ math: true
 <br>
 
 **特性**
-- f(n) = O(g(n)) 代表 O((n))為f(n)的upper bound，因此 n = O(n) = O(n<sup>2.5</sup>) = O(n<sup>3</sup>) = O(n<sup>n</sup>)。一般會讓 g(n) 的值愈小愈好。
+- f(n) = O(g(n)) 代表 O(g(n))為f(n)的upper bound，因此 n = O(n) = O(n<sup>2.5</sup>) = O(n<sup>3</sup>) = O(n<sup>n</sup>)。一般會讓 g(n) 的值愈小愈好。
 - Big-O常用於取得一個程式的 worst-case running time。
 
 <br>
@@ -67,7 +67,7 @@ math: true
 <br>
 
 **特性**
-- f(n) = $$\Omega$$(g(n)) 代表 $$\Omega$$((n))為f(n)lower bound。
+- f(n) = $$\Omega$$(g(n)) 代表 $$\Omega$$(g(n))為f(n)lower bound。
 - $$\Omega$$ 常用於取得一個程式的 best-case running time。
 
 <br>
@@ -93,5 +93,5 @@ math: true
 <br>
 
 **特性**
-- f(n) = $$\theta$$(g(n)) 代表 $$\theta$$((n))為f(n)tight bound。
+- f(n) = $$\theta$$(g(n)) 代表 $$\theta$$(g(n))為f(n)tight bound。
 - $$\theta$$ 常用於取得一個程式的 average-case running time。
