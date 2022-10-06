@@ -44,7 +44,7 @@ The result is <span style="color:red"> (A + B) - C </span>.
 
 <br>
 
-![postfix1](/assets/images/postfix1.png)
+![postfix1](/assets/images/postfix1.png){: width="700" , height = "450"}
 
 ---
 
@@ -54,7 +54,6 @@ The result is <span style="color:red"> (A + B) - C </span>.
     - Each operator appears before its operands.
     - No need <span style="color:red"> parentheses </span>.
     - Priority of operators is no longer relevant.
-    - Prefix notations are used in many programming languages like LISP.
     - Easier to parse for a machine.
 - ## Evaluation
     - Step
@@ -71,6 +70,8 @@ The result is <span style="color:red"> (A + B) - C </span>.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 The result is <span style="color:red"> A / (B * C) </span>.
+
+---
 
 **Conversion**
 ===
@@ -93,7 +94,7 @@ The result is <span style="color:red"> A / (B * C) </span>.
         <br>
 
         - A * (B + C) * D
-            <br>
+
             ![postfix3](/assets/images/postfix3.png){: width="400" , height = "550"}
             
 - ## Infix to Prefix
@@ -103,12 +104,32 @@ The result is <span style="color:red"> A / (B * C) </span>.
         3. Reverse the output
     
     - Example
-        - 1 + ( 3 * 4 – 5 ) / 6 * 7
-            <br>
+        - 1 + ( 3 * 4 – 5 ) / 6 * 7 
+        
             ![prefix1](/assets/images/prefix1.png){: width="400" , height = "600"}
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 The result is <span style="color:red"> + 1 * / - * 3 4 5 6 7 </span>.
 
 - ## Postfix to Infix
+    - Rules
+        - Because <span style="color:red"> the order of operands does not change </span>, we can push every visting operand into stack directly.
+        - <span style="color:red"> Store the last operator for each composite operand in the stack. </span>
+        - The timing of adding ' ( ) ':
+            - For the first operand, if the priority of the old operator is <span style="color:red">lower than</span> the new operator, add ' ( ) '.
+            - For the second operand, if the priority of the old operator is <span style="color:red">lower than</span> or it is <span style="color:red">equal to</span> that of the incoming operator which is either <span style="color:red">' / '</span> or <span style="color:red">' - '</span>, add ' ( ) ' 
+
+    - Example
+        - 5 3 6 2 - + -
+            <br>
+            ![postfix_to_infix](/assets/images/postfix_to_infix.png){: width="550" , height = "350"}
+        <br>
+        <br>
+        - 5 3 - 2 3 * /
+            <br>
+            ![postfix_to_infix2](/assets/images/postfix_to_infix2.png){: width="700" , height = "450"}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The result is <span style="color:red"> + 1 * / - * 3 4 5 6 7 </span>.
+
 - ## Postfix to Infix
