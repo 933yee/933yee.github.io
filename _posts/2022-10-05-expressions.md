@@ -105,7 +105,7 @@ The result is <span style="color:red"> A / (B * C) </span>.
     
     - Example
         - 1 + ( 3 * 4 – 5 ) / 6 * 7 
-        
+
             ![prefix1](/assets/images/prefix1.png){: width="400" , height = "600"}
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -115,9 +115,9 @@ The result is <span style="color:red"> + 1 * / - * 3 4 5 6 7 </span>.
     - Rules
         - Because <span style="color:red"> the order of operands does not change </span>, we can push every visting operand into stack directly.
         - <span style="color:red"> Store the last operator for each composite operand in the stack. </span>
-        - The timing of adding ' ( ) ':
-            - For the first operand, if the priority of the old operator is <span style="color:red">lower than</span> the new operator, add ' ( ) '.
-            - For the second operand, if the priority of the old operator is <span style="color:red">lower than</span> or it is <span style="color:red">equal to</span> that of the incoming operator which is either <span style="color:red">' / '</span> or <span style="color:red">' - '</span>, add ' ( ) ' 
+        - The timing of adding ' () ':
+            - For the first operand, if the priority of the old operator is <span style="color:red">lower than</span> the new operator, add ' () '.
+            - For the second operand, if the priority of the old operator is <span style="color:red">lower than</span> or it is <span style="color:red">equal to</span> that of the incoming operator which is either <span style="color:red">' / '</span> or <span style="color:red">' - '</span>, add ' () ' 
 
     - Example
         - 5 3 6 2 - + -
