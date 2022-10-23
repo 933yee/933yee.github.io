@@ -101,7 +101,7 @@ The result is <span style="color:red"> A / (B * C) </span>.
     - Steps
         1. Reverse the infix expression.
         2. Apply a modified infix to postfix algorithm on reversed input.<span style="color:red">(But do not pop the operator out if its priority is equal to the incoming operator.)<span>
-        3. Reverse the output
+        3. Reverse the output expression.
     
     - Example
         - 1 + ( 3 * 4 – 5 ) / 6 * 7 
@@ -132,4 +132,46 @@ The result is <span style="color:red"> + 1 * / - * 3 4 5 6 7 </span>.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 The result is <span style="color:red"> + 1 * / - * 3 4 5 6 7 </span>.
 
-- ## Postfix to Infix
+- ## Postfix to Prefix
+    - Rules
+        - From left to right.
+        - If the incoming token is an<span style="color:red"> operand </span>, push it to stack.
+        - If the incoming token is an<span style="color:red"> operator </span>, pop the top two stack and concatenate them into {operand, operator2, operator1}.
+
+    - Example
+        - 3 4 * 5 – 6 / 7 * 
+            ![postfix_to_prefix](/assets/images/postfix_to_prefix.png){: width="700" , height = "450"}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The result is <span style="color:red"> * / - * 3 4 5 6 7</span>.
+
+
+- ## Prefix to Infix
+    - Steps
+        1. Reverse the prefix expression.
+        2. Apply a modified postfix to infix algorithm on reversed input.
+        3. Reverse the output expression.
+
+    - Example
+        - */ - * 3 4 5 6 7 
+            ![prefix_to_infix](/assets/images/prefix_to_infix.png){: width="700" , height = "450"}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The result is <span style="color:red"> (3 * 4 – 5) / 6 * 7</span>.
+
+
+- ## Prefix to Postfix
+    - Steps
+        1. Reverse the prefix expression.
+        2. If the incoming token is an<span style="color:red"> operand </span>, push it to stack.
+        3. If the incoming token is an<span style="color:red"> operator </span>, pop the top two stack and concatenate them into {operator1, operator2, operand}.
+
+    - Example
+        - */ - * 3 4 5 6 7
+            ![prefix_to_postfix](/assets/images/prefix_to_postfix.png){: width="700" , height = "450"}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The result is <span style="color:red"> 3 4 * 5 - 6 / 7 *</span>.
+
+
+

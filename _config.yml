@@ -20,9 +20,9 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Kevin's blog                         # the main title
+title: Kevin's note                         # the main title
 
-tagline: No cross, no crown.   # it will display as the sub-title
+tagline: Hello, world!   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
