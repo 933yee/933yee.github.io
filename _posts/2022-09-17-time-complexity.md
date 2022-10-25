@@ -1,8 +1,8 @@
 ---
 title: Time Complexity
 date: 2022-09-17 18:05:00 +0800
-categories: [Code, Others, Time Complexity]
-tags: [time complexity]     # TAG names should always be lowercase
+categories: [Code, Others, Time Complexity, Data Structure]
+tags: [time complexity, data structure]     # TAG names should always be lowercase
 math: true
 ---
 

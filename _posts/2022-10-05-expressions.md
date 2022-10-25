@@ -1,8 +1,8 @@
 ---
 title: Expressions
 date: 2022-10-05 14:01:00 +0800
-categories: [Code, Others, Expressions]
-tags: [expressions]     # TAG names should always be lowercase
+categories: [Code, Others, Expressions, Data Structure]
+tags: [expressions, data structure]     # TAG names should always be lowercase
 math: true
 ---
 **Infix**
