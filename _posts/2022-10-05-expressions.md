@@ -31,7 +31,7 @@ math: true
         3. Evaluating operators.
         4. Push the result into stack.
     - Example
-        - A B + C -
+        - A B + C +
             1. push A
             2. push B
             3. *(detecting an operator)* pop two operands out and push the result after calculating them
@@ -40,7 +40,7 @@ math: true
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-The result is <span style="color:red"> (A + B) - C </span>.
+The result is <span style="color:red"> (A + B) + C </span>.
 
 <br>
 
@@ -155,9 +155,6 @@ The result is <span style="color:red"> * / - * 3 4 5 6 7</span>.
     - Example
         - */ - * 3 4 5 6 7 
             ![prefix_to_infix](/assets/images/prefix_to_infix.png){: width="700" , height = "450"}
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-The result is <span style="color:red"> (3 * 4 – 5) / 6 * 7</span>.
 
 
 - ## Prefix to Postfix
